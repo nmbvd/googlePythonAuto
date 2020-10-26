@@ -1,3 +1,3 @@
 def main():
-    pass
+    '''Checks if there's enough free moeory in the computer.'''
  main()
