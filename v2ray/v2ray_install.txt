@@ -1,3 +1,11 @@
+#GD.nmbvd2.tk   35.241.110.254
+Nas.nmbvd3.tk  35.241.110.254
+vt.nmbvd3.tk  35.241.110.254
+
+VTB.nmbvd3.tk 67.216.196.245
+#TJ.nmbvd2.tk   67.216.196.245
+#MG.nmbvd2.tk 140.82.23.101
+
 20201030更新
 
 https://v2raytech.com/v2ray-all-in-one-script-vless-tcp-xtls-support/
