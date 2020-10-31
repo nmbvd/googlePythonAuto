@@ -1,0 +1,21 @@
+20201030更新
+
+https://v2raytech.com/v2ray-all-in-one-script-vless-tcp-xtls-support/
+
+curl -sL https://raw.githubusercontent.com/hijkpw/scripts/master/v2ray.sh
+
+  V2ray配置信息：
+ 运行状态：已安装 V2ray正在运行, Nginx正在运行
+
+ 协议:  VMess
+ IP(address):  35.241.110.254
+ 端口(port)：4378
+ id(uuid)：1b09f22b-b49a-4f07-bbb3-cf5a3eb6b1ad
+ 额外id(alterid)： 0
+ 加密方式(security)： auto
+ 传输协议(network)： ws
+ 伪装域名(host)：vt.nmbvd3.tk
+ 路径(path)：/root/asdfrg8498afsodifii3
+ 底层安全传输(tls)：TLS
+
+vmess链接: vmess://eyAidiI6IjIiLCAicHMiOiIiLCAiYWRkIjoiMzUuMjQxLjExMC4yNTQiLCAicG9ydCI6IjQzNzgiLCAiaWQiOiIxYjA5ZjIyYi1iNDlhLTRmMDctYmJiMy1jZjVhM2ViNmIxYWQiLCAiYWlkIjoiMCIsICJuZXQiOiJ3cyIsICJ0eXBlIjoibm9uZSIsICJob3N0IjoidnQubm1idmQzLnRrIiwgInBhdGgiOiIvcm9vdC9hc2Rmcmc4NDk4YWZzb2RpZmlpMyIsICJ0bHMiOiJ0bHMiIH0=
