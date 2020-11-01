@@ -27,3 +27,30 @@ curl -sL https://raw.githubusercontent.com/hijkpw/scripts/master/v2ray.sh
  底层安全传输(tls)：TLS
 
 vmess链接: vmess://eyAidiI6IjIiLCAicHMiOiIiLCAiYWRkIjoiMzUuMjQxLjExMC4yNTQiLCAicG9ydCI6IjQzNzgiLCAiaWQiOiIxYjA5ZjIyYi1iNDlhLTRmMDctYmJiMy1jZjVhM2ViNmIxYWQiLCAiYWlkIjoiMCIsICJuZXQiOiJ3cyIsICJ0eXBlIjoibm9uZSIsICJob3N0IjoidnQubm1idmQzLnRrIiwgInBhdGgiOiIvcm9vdC9hc2Rmcmc4NDk4YWZzb2RpZmlpMyIsICJ0bHMiOiJ0bHMiIH0=
+
+
+
+
+虚拟机安装koolshare:
+1、下载koolshare虚拟机版  Home LEDE_X64_fw867 虚拟机转盘或PE下写盘专用：
+openwrt-koolshare-mod-v2.36-r14941-67f6fa0a30-x86-64-generic-squashfs-combined-efi.vmdk
+2、vmware安装koolshare
+https://www.jianshu.com/p/8f84f444a1d8
+3、安装v2ray
+Koolshare-v2ray-x64
+酷软商店v2ray x64 不定期更新
+注意：仅适用于koolshare x64版（电脑版）openwrt lede商店的离线安装
+安装方法：
+
+ssh或者网页打开终端运行
+
+sed -i 's/\tdetect_package/\t# detect_package/g' /koolshare/scripts/ks_tar_install.sh
+下载离线安装包，在商店离线界面安装
+
+https://github.com/acgpiano/koolshare-v2ray-x64/releases
+然后将压缩包上传到koolshare的离线安装，安装后将windows客户端的配置导出一份，拷贝到网页里的v2ray配置运行
+
+v2ray rule
+https://toutyrater.github.io/routing/configurate_rules.html
+
+4、将电脑的默认路由配置为lede虚拟机的nat地址
