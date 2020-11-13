@@ -178,20 +178,6 @@ https://github.com/acgpiano/koolshare-v2ray-x64/releases
       },
       {
         "type": "field",
-        "outboundTag": "direct",
-        "ip": [
-          "geoip:cn"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "geosite:cn"
-        ]
-      },
-      {
-        "type": "field",
         "outboundTag": "proxy",
         "network": "udp,tcp"
       } 
