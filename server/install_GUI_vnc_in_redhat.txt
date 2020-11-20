@@ -1,0 +1,42 @@
+mount -o loop /opt/program/RHEL_7.6_media.iso /mnt/rhel
+cd /etc/yum.repos.d
+vi rhel7.repo
+
+[cdrom]
+name=RedhatEnterprise Linux  7.6 for Local Media
+
+baseurl=file:///mnt/rhel
+
+enable=1
+
+gpgcheck=0
+
+
+yum group list
+
+yum -y groupinstall "Server with GUI"
+systemctl set-default graphical.target
+
+yum install tigervnc-server
+
+vi /lib/systemd/system/vncserver@.service
+将user改为root
+ExecStart=/usr/sbin/runuser -l root -c "/usr/bin/vncserver -geometry 1600x900 %i "
+
+cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:5903.service
+vi /etc/systemd/system/vncserver@:5903.service
+
+
+#firewall-cmd --permanent --zone=public --add-port=5903/tcp
+#firewall-cmd --reload
+vncserver 配置密码
+
+
+systemctl daemon-reload
+systemctl start vncserver@:5903.service
+systemctl enable vncserver@:5903.service
+
+
+ps -ef | grep vnc  找端口
+
+
